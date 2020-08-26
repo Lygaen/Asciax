@@ -7,6 +7,7 @@ import src.shield.client.Listener;
 
 import javax.security.auth.login.LoginException;
 
+import static src.mongodb.DBWrapper.createTestObject;
 import static src.others.Common.addCommand;
 import static src.others.Config.waiter;
 
@@ -21,6 +22,7 @@ public class Main {
                 .addEventListeners(waiter)
                 .build();
 
+        createTestObject("Hey !", true);
 
         buildCommands();
     }

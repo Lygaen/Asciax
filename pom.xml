@@ -26,6 +26,11 @@
             <artifactId>JDA</artifactId>
             <version>4.2.0_182</version>
         </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver-sync</artifactId>
+            <version>4.1.0-beta2</version>
+        </dependency>
     </dependencies>
 
     <repositories>
