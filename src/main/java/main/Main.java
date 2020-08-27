@@ -1,13 +1,13 @@
 package main;
 
 import commands.*;
+import events.Guilds;
 import net.dv8tion.jda.api.JDABuilder;
 import src.others.Config;
 import src.shield.client.Listener;
 
 import javax.security.auth.login.LoginException;
 
-import static src.mongodb.DBWrapper.createTestObject;
 import static src.others.Common.addCommand;
 import static src.others.Config.waiter;
 
@@ -19,10 +19,10 @@ public class Main {
         Config.client = JDABuilder.createDefault(Config.token)
                 .setActivity(Config.activity)
                 .addEventListeners(new Listener())
+                .addEventListeners(new Guilds())
                 .addEventListeners(waiter)
                 .build();
 
-        createTestObject("Hey !", true);
 
         buildCommands();
     }
