@@ -1,17 +1,17 @@
-package src.others;
+package fr.lygaen.asciax.src.others;
 
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.events.message.react.MessageReactionAddEvent;
-import src.interfaces.CommandBase;
-import src.manager.CommandContext;
-import src.shield.category.Category;
+import fr.lygaen.asciax.src.interfaces.CommandBase;
+import fr.lygaen.asciax.src.manager.CommandContext;
+import fr.lygaen.asciax.src.shield.category.Category;
 import net.dv8tion.jda.api.entities.Member;
 
 import java.awt.*;
 import java.util.Objects;
 
-import static src.others.Config.commands;
+import static fr.lygaen.asciax.src.others.Config.commands;
 
 
 public class Common {

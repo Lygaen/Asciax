@@ -1,6 +1,6 @@
-package src.shield.category;
+package fr.lygaen.asciax.src.shield.category;
 
-import src.interfaces.CommandBase;
+import fr.lygaen.asciax.src.interfaces.CommandBase;
 
 import java.util.ArrayList;
 import java.util.List;

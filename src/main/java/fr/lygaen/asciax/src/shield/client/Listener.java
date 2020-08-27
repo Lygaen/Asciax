@@ -1,10 +1,10 @@
-package src.shield.client;
+package fr.lygaen.asciax.src.shield.client;
 
 import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import src.manager.CommandManager;
-import src.others.Config;
+import fr.lygaen.asciax.src.manager.CommandManager;
+import fr.lygaen.asciax.src.others.Config;
 
 import javax.annotation.Nonnull;
 

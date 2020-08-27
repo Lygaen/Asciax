@@ -1,9 +1,9 @@
-package commands;
+package fr.lygaen.asciax.commands;
 
-import src.interfaces.CommandBase;
-import src.manager.CommandContext;
-import src.others.Config;
-import src.shield.category.Category;
+import fr.lygaen.asciax.src.interfaces.CommandBase;
+import fr.lygaen.asciax.src.manager.CommandContext;
+import fr.lygaen.asciax.src.others.Config;
+import fr.lygaen.asciax.src.shield.category.Category;
 
 public class help implements CommandBase {
     @Override
@@ -27,7 +27,7 @@ public class help implements CommandBase {
 
     @Override
     public String getDescription() {
-        return "Show all of the commands";
+        return "Show all of the fr.lygaen.asciax.commands";
     }
 
     @Override

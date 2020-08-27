@@ -1,16 +1,16 @@
-package src.manager;
+package fr.lygaen.asciax.src.manager;
 
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
-import src.interfaces.CommandBase;
-import src.others.Common;
-import src.others.Config;
+import fr.lygaen.asciax.src.interfaces.CommandBase;
+import fr.lygaen.asciax.src.others.Common;
+import fr.lygaen.asciax.src.others.Config;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import static src.others.Config.waiter;
+import static fr.lygaen.asciax.src.others.Config.waiter;
 
 public class CommandManager {
     public static CommandBase getCommand(String search) {

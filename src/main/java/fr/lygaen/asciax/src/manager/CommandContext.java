@@ -1,9 +1,9 @@
-package src.manager;
+package fr.lygaen.asciax.src.manager;
 
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.*;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
-import src.shield.waiter.EventWaiter;
+import fr.lygaen.asciax.src.shield.waiter.EventWaiter;
 
 import java.util.List;
 import java.util.function.Consumer;

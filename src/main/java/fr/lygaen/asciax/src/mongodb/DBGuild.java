@@ -1,15 +1,15 @@
-package src.mongodb;
+package fr.lygaen.asciax.src.mongodb;
 
 import com.mongodb.client.result.InsertOneResult;
 import net.dv8tion.jda.api.entities.Guild;
 import org.bson.Document;
 
-import static src.mongodb.DBConfig.guildsCollection;
-import static src.mongodb.DBWrapper.findByKey;
+import static fr.lygaen.asciax.src.mongodb.DBConfig.guildsCollection;
+import static fr.lygaen.asciax.src.mongodb.DBWrapper.findByKey;
 
 public class DBGuild {
 
-    private String prefix = src.others.Config.prefix;
+    private String prefix = fr.lygaen.asciax.src.others.Config.prefix;
     private Guild guild;
     private Boolean isPrenium = false;
 

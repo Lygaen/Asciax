@@ -1,15 +1,15 @@
-package main;
+package fr.lygaen.asciax.main;
 
-import commands.*;
-import events.Guilds;
+import fr.lygaen.asciax.commands.*;
+import fr.lygaen.asciax.events.Guilds;
 import net.dv8tion.jda.api.JDABuilder;
-import src.others.Config;
-import src.shield.client.Listener;
+import fr.lygaen.asciax.src.others.Config;
+import fr.lygaen.asciax.src.shield.client.Listener;
 
 import javax.security.auth.login.LoginException;
 
-import static src.others.Common.addCommand;
-import static src.others.Config.waiter;
+import static fr.lygaen.asciax.src.others.Common.addCommand;
+import static fr.lygaen.asciax.src.others.Config.waiter;
 
 public class Main {
 

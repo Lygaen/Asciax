@@ -1,17 +1,17 @@
-package events;
+package fr.lygaen.asciax.events;
 
 import net.dv8tion.jda.api.events.guild.GuildJoinEvent;
 import net.dv8tion.jda.api.events.guild.GuildLeaveEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.jetbrains.annotations.NotNull;
 import net.dv8tion.jda.api.entities.Guild;
-import src.mongodb.DBGuild;
+import fr.lygaen.asciax.src.mongodb.DBGuild;
 
 import java.util.Objects;
 
-import static src.mongodb.DBConfig.guildsCollection;
-import static src.mongodb.DBWrapper.findByKey;
-import static src.others.Config.prefix;
+import static fr.lygaen.asciax.src.mongodb.DBConfig.guildsCollection;
+import static fr.lygaen.asciax.src.mongodb.DBWrapper.findByKey;
+import static fr.lygaen.asciax.src.others.Config.prefix;
 
 public class Guilds extends ListenerAdapter {
 

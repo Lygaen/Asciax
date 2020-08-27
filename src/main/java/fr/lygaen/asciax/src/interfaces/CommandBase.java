@@ -1,7 +1,7 @@
-package src.interfaces;
+package fr.lygaen.asciax.src.interfaces;
 
 import net.dv8tion.jda.api.Permission;
-import src.manager.CommandContext;
+import fr.lygaen.asciax.src.manager.CommandContext;
 
 import java.util.Collections;
 import java.util.List;

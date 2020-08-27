@@ -1,9 +1,9 @@
-package src.others;
+package fr.lygaen.asciax.src.others;
 
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.Activity;
-import src.interfaces.CommandBase;
-import src.shield.waiter.EventWaiter;
+import fr.lygaen.asciax.src.interfaces.CommandBase;
+import fr.lygaen.asciax.src.shield.waiter.EventWaiter;
 
 import java.util.ArrayList;
 import java.util.List;

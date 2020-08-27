@@ -1,9 +1,9 @@
-package commands;
+package fr.lygaen.asciax.commands;
 
 import net.dv8tion.jda.api.EmbedBuilder;
-import src.interfaces.CommandBase;
-import src.manager.CommandContext;
-import src.shield.category.Category;
+import fr.lygaen.asciax.src.interfaces.CommandBase;
+import fr.lygaen.asciax.src.manager.CommandContext;
+import fr.lygaen.asciax.src.shield.category.Category;
 
 import java.awt.*;
 import java.util.Arrays;

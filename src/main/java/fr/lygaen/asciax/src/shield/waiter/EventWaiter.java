@@ -1,4 +1,4 @@
-package src.shield.waiter;
+package fr.lygaen.asciax.src.shield.waiter;
 
 import net.dv8tion.jda.api.events.Event;
 import net.dv8tion.jda.api.events.GenericEvent;

@@ -1,11 +1,11 @@
-package src.mongodb;
+package fr.lygaen.asciax.src.mongodb;
 
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.result.InsertOneResult;
 import org.bson.Document;
 
-import static src.mongodb.DBConfig.testCollection;
+import static fr.lygaen.asciax.src.mongodb.DBConfig.testCollection;
 
 public class DBWrapper {
 

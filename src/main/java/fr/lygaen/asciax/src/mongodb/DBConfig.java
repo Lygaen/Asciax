@@ -1,4 +1,4 @@
-package src.mongodb;
+package fr.lygaen.asciax.src.mongodb;
 
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
@@ -8,7 +8,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
-import static src.others.Secret.MONGO_DB_URL_SECRET;
+import static fr.lygaen.asciax.src.others.Secret.MONGO_DB_URL_SECRET;
 
 public class DBConfig {
     private static final ConnectionString MONGO_DB_URL = MONGO_DB_URL_SECRET;
