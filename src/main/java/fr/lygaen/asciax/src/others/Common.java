@@ -17,25 +17,25 @@ import static fr.lygaen.asciax.src.others.Config.commands;
 public class Common {
     public static void notOwner(CommandContext ctx) {
         EmbedBuilder e = new EmbedBuilder()
-                .setTitle("NOT OWNER")
+                .setTitle("NON DEV")
                 .setColor(Color.RED)
-                .setDescription("You need to be the owner of the bot to use this command.");
+                .setDescription("Vous avez besoin d'être le dev du Bot pour utiliser cette commande.");
         ctx.reply(e.build());
     }
 
     public static void notAdmin(CommandContext ctx) {
         EmbedBuilder e = new EmbedBuilder()
-                .setTitle("NOT ADMIN")
+                .setTitle("NON ADMIN")
                 .setColor(Color.RED)
-                .setDescription("You need to be the admin of the Server to use this command.");
+                .setDescription("Vous avez besoin d'être l'Admin du Serveur pour utiliser cette commande.");
         ctx.reply(e.build());
     }
 
     public static void missingPermission(Permission perm, CommandContext ctx) {
         EmbedBuilder e = new EmbedBuilder()
-                .setTitle("MISSING PERM")
+                .setTitle("PERMS MANQUANTES")
                 .setColor(Color.RED)
-                .setDescription("You need to have the permission `" + perm.getName() + "` to use this command.");
+                .setDescription("Vous avez besoin de la permission `" + perm.getName() + "` pour utiliser cette commande.");
         ctx.reply(e.build());
     }
 
@@ -71,5 +71,13 @@ public class Common {
 
     public static boolean basicReactionCheck(MessageReactionAddEvent event, CommandContext ctx, String message_id, String emoji) {
         return Objects.equals(event.getMember(), ctx.getMember()) && event.getMessageId().equals(message_id) && event.getReactionEmote().getEmoji().equals(emoji);
+    }
+
+    public static void notPrenium(CommandContext ctx) {
+        EmbedBuilder e = new EmbedBuilder()
+                .setTitle("NON PRENIUM")
+                .setColor(Color.RED)
+                .setDescription("Vous avez besoin d'être prenium pour utiliser cette commande ! ");
+        ctx.reply(e.build());
     }
 }

@@ -14,6 +14,7 @@ import static fr.lygaen.asciax.src.others.Common.basicReactionCheck;
 import static fr.lygaen.asciax.src.others.Common.getMemberNonNull;
 
 public class ban implements CommandBase {
+
     @Override
     public void handle(CommandContext ctx) {
         Member target;
@@ -23,6 +24,7 @@ public class ban implements CommandBase {
             ctx.reply("Merci de donner une mention ou un id");
             return;
         }
+        String sentence = String.join(" ", ctx.getArgs().remove(0));
         if (target == null) {
             ctx.reply("Ce membre n'existe pas ! Il a besoin d'être sur votre Serveur pour être bannis !");
             return;
@@ -34,7 +36,7 @@ public class ban implements CommandBase {
         ctx.reply(embed.build(), event -> {
             event.addReaction("✔").queue();
             ctx.getWaiter().waitForEvent(MessageReactionAddEvent.class, e -> basicReactionCheck(e, ctx, event.getId(), "✔"), ev ->{
-                target.ban(7).queue();
+                target.ban(7, sentence).queue();
                 ctx.reply("Bannis !");
             });
         });

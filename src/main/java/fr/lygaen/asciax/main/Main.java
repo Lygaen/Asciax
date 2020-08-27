@@ -33,6 +33,7 @@ public class Main {
         addCommand(new ban());
         addCommand(new unban());
         addCommand(new kick());
+        addCommand(new prefix());
     }
 
 }

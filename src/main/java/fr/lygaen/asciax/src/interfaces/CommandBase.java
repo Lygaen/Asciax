@@ -26,4 +26,5 @@ public interface CommandBase {
 
     default Permission requirePermission() {return null;}
 
+    default Boolean isPrenium() {return false;}
 }

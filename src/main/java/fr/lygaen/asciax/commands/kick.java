@@ -22,6 +22,7 @@ public class kick implements CommandBase {
             ctx.reply("Merci de donner une mention ou un id");
             return;
         }
+        String sentence = String.join(" ", ctx.getArgs().remove(0));
         if (target == null) {
             ctx.reply("Ce membre n'existe pas ! Il a besoin d'être sur votre Serveur pour être Kicker !");
             return;
@@ -33,7 +34,7 @@ public class kick implements CommandBase {
         ctx.reply(embed.build(), event -> {
             event.addReaction("✔").queue();
             ctx.getWaiter().waitForEvent(MessageReactionAddEvent.class, e -> basicReactionCheck(e, ctx, event.getId(), "✔"), ev ->{
-                target.kick().queue();
+                target.kick(sentence).queue();
                 ctx.reply("Kické !");
             });
         });
